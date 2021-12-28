@@ -1,6 +1,6 @@
 <?php
 // Necessaire pour POC BDD et Index PHP
-// $database=new PDO ('mysql:host=localhost;dbnmmobilier=immobilier','root','');
+// $database=new PDO ('mysql:host=localhost;dbimmobilier=immobilier','root','');
 // $results = $database->query('SELECT * FROM logement');
 // while ($row=$results->fetch())
 // {

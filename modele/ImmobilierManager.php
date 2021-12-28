@@ -18,7 +18,7 @@ class ImmobilierManager extends Manager {
     }
 
     public function loadimmobilier(){
-        $req  = $this->getBdd()->prepare("SELECT * FROM immobilier");
+        $req  = $this->getBdd()->prepare("SELECT * FROM logement");
         $req->execute();
         $myimmobilier = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();
