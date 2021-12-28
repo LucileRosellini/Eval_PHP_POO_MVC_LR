@@ -1,11 +1,11 @@
 <?php
 
 //Necessaire au poc require modele classe (en construction) immobilier.php depuis modele immobilierManager.php 
-//echo "hello world";
+//echo "hello world depuis immobilier";
 
 class Immobilier {
 
-    private int     $id_logement;
+    private int     $id;
     private string  $titre;
     private string  $adresse;
     private string  $ville;
@@ -18,8 +18,8 @@ class Immobilier {
 
 
 
-    public function __construct($id_logement,$titre,$adresse,$ville,$cp,$surface,$prix,$photo,$type,$description){
-        $this->id_logement = $id_logement ;
+    public function __construct($id,$titre,$adresse,$ville,$cp,$surface,$prix,$photo,$type,$description){
+        $this->id = $id ;
         $this->titre = $titre ;
         $this->adresse = $adresse;
         $this->ville = $ville;
@@ -33,12 +33,12 @@ class Immobilier {
     }
 
 
-	function getIdlogement() { 
-        return $this->idlogement; 
+	function getId() { 
+        return $this->id; 
    } 
 
-   function setIdlogement($idlogement) {  
-       $this->idlogement = $idlogement; 
+   function setId($id) {  
+       $this->id = $id; 
    } 
 
 

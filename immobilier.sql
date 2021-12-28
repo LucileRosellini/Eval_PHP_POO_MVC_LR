@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `logement` (
-  `id_logement` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `titre` varchar(127) NOT NULL,
   `adresse` varchar(127) NOT NULL,
   `ville` varchar(127) NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE `logement` (
 -- Déchargement des données de la table `logement`
 --
 
-INSERT INTO `logement` (`id_logement`, `titre`, `adresse`, `ville`, `cp`, `surface`, `prix`, `photo`, `type`, `description`) VALUES
+INSERT INTO `logement` (`id`, `titre`, `adresse`, `ville`, `cp`, `surface`, `prix`, `photo`, `type`, `description`) VALUES
 (1, 'Coup de coeur', '95 Chemin de l\'Alambic', 'La Combe de Lancey', 38190, 35, 500, 'https://th.bing.com/th/id/OIP.SvbFaWLSHIhJpknkzIhgXQHaLH?pid=ImgDet&rs=1', 0, 'Ancien quartier historique des distilleurs situé au cœur d\'un hameau montagnard.\r\n\r\n');
 
 --
@@ -55,7 +55,7 @@ INSERT INTO `logement` (`id_logement`, `titre`, `adresse`, `ville`, `cp`, `surfa
 -- Index pour la table `logement`
 --
 ALTER TABLE `logement`
-  ADD PRIMARY KEY (`id_logement`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -65,7 +65,7 @@ ALTER TABLE `logement`
 -- AUTO_INCREMENT pour la table `logement`
 --
 ALTER TABLE `logement`
-  MODIFY `id_logement` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

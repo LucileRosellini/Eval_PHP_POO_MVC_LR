@@ -1,6 +1,6 @@
 <?php
 
-echo "Test require manager depuis ImmobilierManager";
+//echo "Hello World depuis Manager.php Test require manager depuis ImmobilierManager";
 
 abstract class Manager {
 
