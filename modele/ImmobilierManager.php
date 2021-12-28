@@ -4,3 +4,4 @@
 //echo "hello world";
 
 require_once "immobilier.php";
+require_once "Manager.php";
