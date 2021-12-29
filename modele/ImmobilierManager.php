@@ -4,7 +4,7 @@
 //echo "hello world depuis immobilier manager";
 
 require_once "immobilier.php";
-require_once "Manager.php";
+require_once "manager.php";
 
 class ImmobilierManager extends Manager {
     private $immobilier;

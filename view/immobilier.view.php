@@ -22,7 +22,7 @@
         </thead>
         <tbody>
 
-            <?php foreach ($immobiliers as $value) : ?>
+            <?php foreach ($Immobiliers as $value) : ?>
                 <tr>
                     <th><?= $value->getId() ?></th>
                     <td><?= $value->getTitre() ?></td>

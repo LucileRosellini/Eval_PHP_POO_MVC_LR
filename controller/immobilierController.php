@@ -13,7 +13,7 @@ class ImmobilierController {
     }
 
     public function displayImmobiliers(){
-        $immobiliers = $this->immobilierManager->getImmobilier();
+        $Immobiliers = $this->immobilierManager->getImmobilier();
         require_once "view/immobilier.view.php";
     }
 
