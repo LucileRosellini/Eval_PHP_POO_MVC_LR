@@ -1,12 +1,8 @@
 <?php ob_start();
 ?>
 
-
-
-    <p>TEST</p>
-
-    <table class="table table-hover">
-        <thead>
+    <table class="table">
+        <thead class="thead-dark">
             <tr>
                 <th>id</th>
                 <th>titre</th>
