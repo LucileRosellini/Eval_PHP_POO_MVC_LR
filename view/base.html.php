@@ -20,13 +20,10 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" href="<?= URL ?>immobilier">EXCLUSIVITÉS!</a>
+            <a class="nav-link" href="<?= URL ?>?page=immobilier">EXCLUSIVITÉS!</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="<?= URL ?>immobilier/ivalid">Ajouter</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="<?= URL ?>immobiliers/editvalid">MAJiiie!!!*!</a>
+            <a class="nav-link" href="<?= URL ?>?page=immobilier/add">Ajouter</a>
         </li>
 
 
