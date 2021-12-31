@@ -11,7 +11,7 @@
    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-    <a class="navbar-brand" href="<?= URL ?>accueil"><?= $title ?></a>
+    <a class="navbar-brand" href="<?= URL ?>accueil"> Accueil </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,6 @@
 
    <main>
         <div class="container">
-            <h1 class=" my-4 text-center"><?= $title ?></h1>
             <h2 class=" my-4 text-center"><?= $content ?></h2>
         </div>
     </main>

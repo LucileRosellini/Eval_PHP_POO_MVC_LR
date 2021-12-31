@@ -1,6 +1,6 @@
 <?php ob_start() ?>
 
-<div>Hello World</div>
+<!-- <div>Hello World</div> -->
 
 <form method="POST" action="<?= URL ?>immobilier/ivalid">
   <div class="form-group">
@@ -28,7 +28,7 @@
     <input type="number" class="form-control" name="prix" id="prix">
   </div>
   <div class="form-group">
-    <label for="photo">Photo</label>
+    <label for="photo">Photo </label>
     <input type="text" class="form-control" name="photo" id="photo">
   </div>
   <div class="form-group">
@@ -44,6 +44,6 @@
 
 <?php
 $content =  ob_get_clean();
-$titre = "H3110 W0r1d";
+$titre = "Nouveau logement";
 require_once "base.html.php";
 ?>

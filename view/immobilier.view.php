@@ -10,9 +10,11 @@
                 <th>cp</th>
                 <th>surface</th>
                 <th>prix</th>
-                <th>photo</th>
+                <th>photo 200x200</th>
                 <th>type</th>
                 <th>description</th>
+                <th>modifier</th>
+                <th>supprimer</th>
             </tr>
         </thead>
         <tbody>
@@ -26,9 +28,11 @@
                     <td><?= $value->getCp() ?></td>
                     <td><?= $value->getSurface() ?></td>
                     <td><?= $value->getPrix() ?></td>
-                    <td><?= $value->getPhoto() ?></td>
+                    <td><img src="<?= $value->getPhoto() ?>"/></td>
                     <td><?= $value->getType() ?></td>
                     <td><?= $value->getDescription() ?></td>
+                    <td><a class="nav-link" href="<?= URL ?>?page=immobilier/edit/<?= $value->getId() ?>">modifier</a></td>
+		            <td><a class="nav-link" href="<?= URL ?>?page=immobilier/delete/<?= $value->getId() ?>">supprimer</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
