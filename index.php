@@ -26,7 +26,7 @@ if(empty($_GET['page'])){
                 $immobilierController->displayImmobiliers();
             } else if($url[1] === "add"){
                 $immobilierController->newImmobilierForm();
-            } else if($url[1] === "gvalid"){
+            } else if($url[1] === "ivalid"){
                 $immobilierController->newImmobilierValidation();
             } else if($url[1] === "edit"){
                 $immobilierController->editImmobilierForm($url[2]);

@@ -1,5 +1,4 @@
-<?php ob_start();
-?>
+<?php ob_start() ?>
 
     <table class="table">
         <thead class="thead-dark">

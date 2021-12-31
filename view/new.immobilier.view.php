@@ -1,5 +1,7 @@
 <?php ob_start() ?>
 
+<div>Hello World</div>
+
 <form method="POST" action="<?= URL ?>immobilier/ivalid">
   <div class="form-group">
     <label for="titre">Titre</label>
@@ -45,6 +47,6 @@
 
 <?php
 $content =  ob_get_clean();
-$titre = "Ajouter un jeu";
+$titre = "H3110 W0r1d";
 require_once "base.html.php";
 ?>

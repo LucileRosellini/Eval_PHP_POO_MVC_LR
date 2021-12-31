@@ -3,8 +3,8 @@
 // Necessaire au poc require immobilierManager depuis immobilierController
 //echo "hello world depuis immobilier manager";
 
-require_once "immobilier.php";
-require_once "manager.php";
+require_once "Immobilier.php";
+require_once "Manager.php";
 
 class ImmobilierManager extends Manager {
     private $immobilier;
@@ -13,11 +13,11 @@ class ImmobilierManager extends Manager {
         $this->immobilier[] = $immobilier;
     }
 
-    public function getimmobilier(){
+    public function getImmobilier(){
         return $this->immobilier;
     }
 
-    public function loadimmobilier(){
+    public function loadImmobilier(){
         $req  = $this->getBdd()->prepare("SELECT * FROM logement");
         $req->execute();
         $myimmobilier = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -31,7 +31,7 @@ class ImmobilierManager extends Manager {
     }
 
     public function newImmobilierDB($titre,$adresse,$ville,$cp,$surface,$prix,$photo,$type,$description){
-        $req = "INSERT INTO immobilier (titre,adresse,ville,cp,surface,prix,photo,type,description) 
+        $req = "INSERT INTO logement (titre,adresse,ville,cp,surface,prix,photo,type,description) 
                 VALUES (:titre, :adresse,:ville,:cp,:surface,:prix,:photo,:type,:description)";
         $statement = $this->getBdd()->prepare($req);
         $statement->bindValue(":titre",$titre, PDO::PARAM_STR);
@@ -61,7 +61,7 @@ class ImmobilierManager extends Manager {
     }
 
     public function editImmobilierDB($id,$titre,$adresse,$ville,$cp,$surface,$prix,$photo,$type,$description){
-        $req = "UPDATE immobilier SET titre = :titre, adresse = :adresse, ville = :ville, cp = :cp, surface = :surface, prix = :prix, photo = :photo, type = :type, description = :description 
+        $req = "UPDATE logement SET titre = :titre, adresse = :adresse, ville = :ville, cp = :cp, surface = :surface, prix = :prix, photo = :photo, type = :type, description = :description 
         WHERE id = :id";
         $statement = $this->getBdd()->prepare($req);
         $statement->bindValue(":id",$id, PDO::PARAM_INT);
@@ -91,7 +91,7 @@ class ImmobilierManager extends Manager {
     }
 
     public function deleteImmobilierBD($id){
-        $req = "DELETE FROM immobilier WHERE id = :id";
+        $req = "DELETE FROM logement WHERE id = :id";
         $statement = $this->getBdd()->prepare($req);
         $statement->bindValue(":id", $id, PDO::PARAM_INT);
         $result = $statement->execute();
