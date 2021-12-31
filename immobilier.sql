@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : lun. 27 déc. 2021 à 10:57
+-- Généré le : ven. 31 déc. 2021 à 12:20
 -- Version du serveur : 5.7.33
 -- Version de PHP : 7.4.19
 
@@ -45,7 +45,8 @@ CREATE TABLE `logement` (
 --
 
 INSERT INTO `logement` (`id`, `titre`, `adresse`, `ville`, `cp`, `surface`, `prix`, `photo`, `type`, `description`) VALUES
-(1, 'Coup de coeur', '95 Chemin de l\'Alambic', 'La Combe de Lancey', 38190, 35, 500, 'https://th.bing.com/th/id/OIP.SvbFaWLSHIhJpknkzIhgXQHaLH?pid=ImgDet&rs=1', 0, 'Ancien quartier historique des distilleurs situé au cœur d\'un hameau montagnard.\r\n\r\n');
+(1, 'Coup de coeur', '95 Chemin de l\'Alambic', 'La Combe de Lancey', 38190, 35, 500, 'https://zupimages.net/up/21/52/q82r.jpg', 0, 'Ancien quartier historique des distilleurs situé au cœur d\'un hameau montagnard.\r\n\r\n'),
+(2, 'Chalet de Montagne', '22 Rue du ruisseau', 'Prapoutel', 38190, 75, 820, 'https://zupimages.net/up/21/52/s3ie.jpg', 1, 'Adorable petit chalet au pied des pistes de ski. ');
 
 --
 -- Index pour les tables déchargées
@@ -65,7 +66,7 @@ ALTER TABLE `logement`
 -- AUTO_INCREMENT pour la table `logement`
 --
 ALTER TABLE `logement`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

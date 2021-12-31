@@ -33,13 +33,13 @@ class ImmobilierController {
 
     public function editImmobilierValidation(){
         $this->immobilierManager->editImmobilierDB($_POST['id'], $_POST['titre'], $_POST['adresse'],$_POST['ville'],$_POST['cp'],$_POST['surface'],$_POST['prix'],$_POST['photo'],$_POST['type'],$_POST['description']);
-        header("Location:". URL . "immobiliers");
+        header("Location:". URL . "?page=immobilier");
 
      }
 
     public function deleteImmobilier($id){
         $this->immobilierManager->deleteImmobilierBD($id);
-        header("Location: " . URL . "immobiliers");
+        header("Location: " . URL . "?page=immobilier");
     }
 
 }

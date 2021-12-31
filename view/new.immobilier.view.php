@@ -2,7 +2,7 @@
 
 <!-- <div>Hello World</div> -->
 
-<form method="POST" action="<?= URL ?>immobilier/ivalid">
+<form method="POST" action="<?= URL ?>?page=immobilier/ivalid">
   <div class="form-group">
     <label for="titre">Titre</label>
     <input type="text" class="form-control" name="titre" id="titre">
