@@ -39,9 +39,6 @@
     <label for="description">Description</label>
     <input type="text" class="form-control" name="description" id="description">
   </div>
-
-
-
   <button type="submit" class="btn btn-primary">Ajouter</button>
 </form>
 
